@@ -242,7 +242,7 @@ public:
             for (auto const &kv : players)
             {
                 Player *plr = kv.second;
-                if (!plr || !plr->IsInWorld() || plr->IsGameMaster())
+                if (!plr || !plr->IsInWorld() || plr->GetSession()->IsBot())
                     continue;
                 TryAutoFish(plr);
             }

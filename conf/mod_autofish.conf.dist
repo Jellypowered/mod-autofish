@@ -71,7 +71,7 @@ AutoFish.AutoLootDelayMs = 120
 #    AutoFish.RequiredItemId
 #        Description: Sets an item, by ID, to be held in the bags of the player to activate autofishing. Set to 0 to require no item
 #        Default:     0
-#
+#        Example: 6256 - Fishing Pole
 AutoFish.RequiredItemId = 0
 
 #
