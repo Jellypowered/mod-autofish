@@ -242,7 +242,7 @@ public:
             for (auto const &kv : players)
             {
                 Player *plr = kv.second;
-                if (!plr || !plr->IsInWorld() || plr->GetSession()->IsBot())
+                if (!plr || !plr->IsInWorld() || plr->GetSession()->IsHeadless())
                     continue;
                 TryAutoFish(plr);
             }
